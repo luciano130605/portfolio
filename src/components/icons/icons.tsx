@@ -160,7 +160,7 @@ export function RailOpenIcon({ className = "", size = 24, color = "currentColor"
 }
 
 export function RailClosedIcon({ className = "", size = 24, color = "currentColor", }: Icons) {
-    return(
+    return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -173,6 +173,35 @@ export function RailClosedIcon({ className = "", size = 24, color = "currentColo
         >
             <path d="M11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3Z" />
             <path d="M15 3V21" />
+        </svg>
+    );
+}
+
+export function Internet({ className = "", size = 24, color = "currentColor", }: Icons) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} className={className} viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_4418_9448)">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.99998 3H8.99998C7.04998 8.84 7.04998 15.16 8.99998 21H7.99998" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 3C16.95 8.84 16.95 15.16 15 21" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 16V15C8.84 16.95 15.16 16.95 21 15V16" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 8.99961C8.84 7.04961 15.16 7.04961 21 8.99961" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <clipPath id="clip0_4418_9448">
+                    <rect width="24" height="24" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    );
+}
+
+
+export function Code({ className = "", size = 24, color = "currentColor", }: Icons) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={size} height={size} color={color} fill="none" stroke={color} stroke-width="1.5" className={className} stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 6L4.32038 9.17157C2.77346 10.5049 2 11.1716 2 12C2 12.8284 2.77346 13.4951 4.32038 14.8284L8 18"></path>
+            <path d="M16 6L19.6796 9.17157C21.2265 10.5049 22 11.1716 22 12C22 12.8284 21.2265 13.4951 19.6796 14.8284L16 18"></path>
         </svg>
     );
 }

@@ -68,17 +68,41 @@ export const copy = {
     },
     clockLabel: "Hora local",
     footerNote: "Hecho en Buenos Aires",
-    evently: {
-      title: "Evently",
-      status: "En línea",
-      kicker: "Producto web",
-      desc: "Plataforma para crear y gestionar invitaciones digitales, entradas con código QR y diseños. Pensada para que un organizador arme el evento, lo comparta y controle el acceso desde un solo lugar.",
-      points: [
-        "Invitaciones digitales con diseño propio",
-        "Entradas con código QR",
-        "Gestión del evento en un solo tablero",
-      ],
-    },
+    projects: [
+
+      {
+        title: "Evently",
+        status: "En línea",
+        kicker: "Página web",
+        desc: "Plataforma para crear y gestionar invitaciones digitales, entradas con código QR y diseños. Pensada para que un organizador arme el evento, lo comparta y controle el acceso desde un solo lugar.",
+        points: [
+          "Invitaciones digitales con diseño propio",
+          "Entradas con código QR",
+          "Gestión del evento en un solo tablero",
+        ],
+        tags: ["React", "Supabase"],
+        image: "/projects/evently.png",
+        repo: "https://github.com/luciano130605/evently",
+        live: "https://evently-azure-six.vercel.app/",
+      },
+      {
+        title: "Che",
+        status: "En desarrollo",
+        kicker: "Página web",
+        desc: "Aplicación de organización personal que permite gestionar tareas, recordatorios y prioridades mediante lenguaje natural. CHE interpreta lo que el usuario necesita hacer y se encarga de organizarlo y recordárselo en el momento adecuado.",
+        points: [
+          "Organización de tareas mediante lenguaje natural",
+          "Clasificación y priorización automática",
+          "Recordatorios mediante Push y Telegram",
+          "Desarrollado como trabajo de tesis",
+        ],
+        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Express", "Prisma"],
+        image: "/projects/che.png",
+        repo: "",
+        live: "",
+      },
+    ],
+
     education: [
       {
         title: "Tecnicatura en Desarrollo de Software",
@@ -186,17 +210,40 @@ export const copy = {
     },
     clockLabel: "Local time",
     footerNote: "Made in Buenos Aires",
-    evently: {
-      title: "Evently",
-      status: "Live",
-      kicker: "Web product",
-      desc: "A platform for creating and managing digital invitations, QR-code tickets, and designs. It is designed to allow organizers to set up an event, share it, and manage access—all from a single location.",
-      points: [
-        "Digital invitations with custom design",
-        "QR-code tickets",
-        "Event management in a single dashboard",
-      ],
-    },
+    projects: [
+
+      {
+        title: "Evently",
+        status: "Live",
+        kicker: "Website",
+        desc: "A platform for creating and managing digital invitations, QR-code tickets, and designs. It allows organizers to set up an event, share it, and manage access from a single place.",
+        points: [
+          "Digital invitations with custom design",
+          "QR-code tickets",
+          "Event management in a single dashboard",
+        ],
+        tags: ["React", "Supabase"],
+        image: "/projects/evently.png",
+        repo: "https://github.com/luciano130605/evently",
+        live: "https://evently-azure-six.vercel.app/",
+      },
+      {
+        title: "Che",
+        status: "In development",
+        kicker: "Website",
+        desc: "A personal organization app that allows you to manage tasks, reminders, and priorities using natural language. CHE interprets what the user needs to do and handles organizing and reminding them at the right time.",
+        points: [
+          "Task organization using natural language",
+          "Automatic classification and prioritization",
+          "Reminders via push notifications and Telegram",
+          "Developed as a thesis project"
+        ],
+        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Express", "Prisma"],
+        image: "/projects/che.png",
+        repo: "",
+        live: "",
+      },
+    ],
     education: [
       {
         title: "Software Development Technician",
