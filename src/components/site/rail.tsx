@@ -127,7 +127,7 @@ export function Rail({
               lang === "es" ? t.cta.langEn : t.cta.langEs
             }
           >
-            {lang === "es" ? "🇺🇸" : "🇦🇷"}
+            {lang === "es" ? "EN" : "ES"}
           </button>
 
           <button

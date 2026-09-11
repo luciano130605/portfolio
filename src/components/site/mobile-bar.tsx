@@ -28,7 +28,8 @@ export function MobileBar({
             className="flex h-11 min-w-11 items-center justify-center rounded-full px-2 font-mono text-xs text-muted"
             aria-label={lang === "es" ? t.cta.langEn : t.cta.langEs}
           >
-            {lang === "es" ? "EN" : "ES"}
+            {lang === "es" ? "🇺🇸" : "🇦🇷"}
+
           </button>
           <button
             type="button"
