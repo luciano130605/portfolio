@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Luciano de la Peña — Desarrollador de Software",
+      "hasCanvas": false,
+      "bodyTextLen": 1863,
+      "bodyTextHash": "b81fa3b89ec2b8f63abc497d759b9f7800938bfaaa056c770a32718bc1a3c22a",
+      "bodyTextPrefix": "Saltar al contenido LdP Luciano de la Peña 01 Inicio 02 Proyecto",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Luciano de la Peña — Desarrollador de Software",
+      "hasCanvas": false,
+      "bodyTextLen": 1754,
+      "bodyTextHash": "700d44ed54de7ad3aae0657b9ed8d71857ba343c371673172338ef287a7be512",
+      "bodyTextPrefix": "Saltar al contenido LdP EN Abierto a prácticas y primeros roles ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
