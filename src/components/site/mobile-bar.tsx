@@ -1,7 +1,7 @@
-import { Menu, Moon, Sun, X } from "lucide-react";
 import { nav, profile } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useSite } from "./site-provider";
+import { DarkIcon, LightIcon } from "../icons/icons";
 
 export function MobileBar({
   open,
@@ -36,7 +36,7 @@ export function MobileBar({
             className="flex size-11 items-center justify-center rounded-full text-muted"
             aria-label={theme === "dark" ? t.cta.themeLight : t.cta.themeDark}
           >
-            {theme === "dark" ? <Moon className="size-4" /> : <Sun className="size-4" />}
+            {theme === "dark" ? <DarkIcon className="size-4" /> : <LightIcon className="size-4" />}
           </button>
 
         </div>

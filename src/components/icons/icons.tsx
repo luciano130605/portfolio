@@ -70,3 +70,72 @@ export function Sms({ className = "", size = 24, color = "currentColor", }: Icon
     );
 }
 
+
+
+
+export function LightIcon({ className = "", size = 24, color = "currentColor", }: Icons) {
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            width={size}
+            height={size}
+            fill="none"
+            className={className}
+            aria-hidden="true"
+        >
+            <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke={color}
+                strokeWidth="1.5"
+            />
+
+            <path
+                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10V2Z"
+                fill={color}
+            />
+
+            <circle
+                cx="12"
+                cy="12"
+                r="4.5"
+                fill={color}
+            />
+        </svg>
+    );
+}
+
+export function DarkIcon({ className = "", size = 24, color = "currentColor", }: Icons) {
+
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            width={size}
+            height={size}
+            fill="none"
+            className={className}
+            aria-hidden="true"
+        >
+            <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke={color}
+                strokeWidth="1.5"
+            />
+
+            <path
+                d="M12 2C17.523 2 22 6.477 22 12s-4.477 10-10 10V2Z"
+                fill={color}
+            />
+
+            <circle
+                cx="12"
+                cy="12"
+                r="4.5"
+                fill={color}
+            />
+        </svg>
+    );
+}

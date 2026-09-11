@@ -130,7 +130,7 @@ export const copy = {
       },
       {
         label: "Backend",
-        items: ["Node.js", "Express", "MySQL", "MongoDB"],
+        items: ["Node.js", "Express"],
       },
       {
         label: "Base de datos",
@@ -248,7 +248,7 @@ export const copy = {
       },
       {
         label: "Backend",
-        items: ["Node.js", "Express", "MySQL", "MongoDB"],
+        items: ["Node.js", "Express"],
       },
       {
         label: "Database",

@@ -1,7 +1,7 @@
-import { Moon, Sun } from "lucide-react";
 import { nav, profile } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useSite } from "./site-provider";
+import { DarkIcon, LightIcon } from "../icons/icons";
 
 export function Rail({
   activeId,
@@ -65,7 +65,7 @@ export function Rail({
             aria-label={theme === "dark" ? t.cta.themeLight : t.cta.themeDark}
           >
             <span className="relative size-4">
-              <Sun
+              <LightIcon
                 className={cn(
                   "absolute inset-0 size-4 transition-[opacity,transform,filter] duration-300 ease-[cubic-bezier(0.2,0,0,1)]",
                   theme === "light"
@@ -73,7 +73,7 @@ export function Rail({
                     : "scale-[0.25] opacity-0 blur-[4px]",
                 )}
               />
-              <Moon
+              <DarkIcon
                 className={cn(
                   "absolute inset-0 size-4 transition-[opacity,transform,filter] duration-300 ease-[cubic-bezier(0.2,0,0,1)]",
                   theme === "dark"
