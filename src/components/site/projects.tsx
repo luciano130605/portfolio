@@ -15,6 +15,13 @@ export function Projects() {
     "In development": Code,
   } as const;
 
+  const statusLabels = {
+    "En línea": "Sitio web",
+    "En desarrollo": "En desarrollo",
+    Live: "Website",
+    "In development": "In development",
+  } as const;
+
   return (
     <section
       id="proyectos"
@@ -59,13 +66,14 @@ export function Projects() {
 
                   {StatusIcon && (
                     <span
-                      className="inline-flex items-center justify-center rounded-full p-2 text-muted "
-                      title={project.status}
-                      aria-label={project.status}
+                      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1.5 text-muted"
+                      title={statusLabels[project.status]}
+                      aria-label={statusLabels[project.status]}
                     >
-                      <StatusIcon
-                        className={`size-3.5 `}
-                      />
+                      <StatusIcon className="size-3.5" />
+                      <span className="text-[10px] sm:hidden">
+                        {statusLabels[project.status]}
+                      </span>
                     </span>
                   )}
                 </div>
