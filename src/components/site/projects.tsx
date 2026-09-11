@@ -71,9 +71,7 @@ export function Projects() {
                       aria-label={statusLabels[project.status]}
                     >
                       <StatusIcon className="size-3.5" />
-                      <span className="text-[10px] sm:hidden">
-                        {statusLabels[project.status]}
-                      </span>
+                        
                     </span>
                   )}
                 </div>
