@@ -12,11 +12,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Luciano de la Peña — Desarrollador de Software" },
+      { title: "Luciano de la Peña — Software Developer" },
       {
         name: "description",
         content:
-          "Estudiante de Desarrollo de Software en Buenos Aires. React, TypeScript y productos web — portfolio de Luciano de la Peña.",
+          "Software Developer and Software Development student from Buenos Aires, Argentina",
       },
       { name: "author", content: APP_NAME },
       { name: "theme-color", content: "#0c0c0b" },
