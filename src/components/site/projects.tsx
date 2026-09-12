@@ -132,7 +132,7 @@ export function Projects() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <GH className="size-4" />
+                          <GH className="size-4" size={18} />
                           {t.cta.repo}
                         </a>
                       </Button>

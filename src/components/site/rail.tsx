@@ -25,9 +25,9 @@ export function Rail({
         onClick={onToggle}
         className={cn(
           "absolute top-0 z-30 flex size-8 items-center justify-center rounded-full",
-          "text-muted shadow-[var(--shadow-border)]",
+          "text-muted ",
           "transition-all duration-200",
-          "hover:bg-elevated hover:text-fg",
+          "hover:text-fg",
           collapsed ? "right-1" : "right-0",
         )}
         aria-label={collapsed ? "Expandir menú" : "Contraer menú"}
