@@ -109,11 +109,7 @@ export const copy = {
         school: "IFTS N°11",
         dates: "2024 — Actual",
       },
-      {
-        title: "Bachiller con orientación deportiva",
-        school: "Instituto Comunicaciones",
-        dates: "2018 — 2022",
-      },
+    
     ],
     courses: [
       {
@@ -140,12 +136,7 @@ export const copy = {
         year: "2025",
         href: "/certificados/qa.pdf",
       },
-      {
-        title: "Desarrollador de Python",
-        org: "Edutin Academy",
-        year: "2025",
-        href: "/certificados/edutin.pdf",
-      },
+      
     ],
     skillGroups: [
       {
@@ -245,11 +236,7 @@ export const copy = {
       },
     ],
     education: [
-      {
-        title: "Software Development Technician",
-        school: "IFTS N°11",
-        dates: "2024 — Present",
-      },
+     
       {
         title: "High school, sports orientation",
         school: "Instituto Comunicaciones",
@@ -281,12 +268,7 @@ export const copy = {
         year: "2025",
         href: "/certificados/qa.pdf",
       },
-      {
-        title: "Python Developer",
-        org: "Edutin Academy",
-        year: "2025",
-        href: "/certificados/edutin.pdf",
-      },
+    
     ],
     skillGroups: [
       {
