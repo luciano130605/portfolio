@@ -83,7 +83,7 @@ export const copy = {
         tags: ["React", "TypeScript", "TailwindCSS"],
         image: "/projects/landing.png",
         repo: "",
-        live: "https://portfolio-landing-three-psi.vercel.app/",
+        live: "https://lucianodelapena.com/landing",
       },
 
       {
@@ -232,7 +232,7 @@ export const copy = {
         tags: ["React", "TypeScript", "TailwindCSS"],
         image: "/projects/landing.png",
         repo: "",
-        live: "https://portfolio-landing-three-psi.vercel.app/",
+        live: "https://lucianodelapena.com/landing",
       },
       {
         title: "Evently",
