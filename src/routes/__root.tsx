@@ -15,28 +15,40 @@ export const Route = createRootRoute({
       { title: "Luciano de la Peña — Software Developer" },
       {
         name: "description",
-        content:
-          "Software Developer and Software Development student from Buenos Aires, Argentina",
+        content: "Software Developer y estudiante de Desarrollo de Software en Buenos Aires, Argentina",
       },
       { name: "author", content: APP_NAME },
       { name: "theme-color", content: "#0c0c0b" },
+      { name: "robots", content: "index, follow" },
+
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: "Luciano de la Peña — Software Developer" },
+      { property: "og:description", content: "Software Developer y estudiante de Desarrollo de Software en Buenos Aires, Argentina" },
+      { property: "og:url", content: "https://tudominio.com" },
+      { property: "og:image", content: "https://lucianodelapena.com/og.jpg" },
+      { property: "og:locale", content: "es_AR" },
+
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Luciano de la Peña — Software Developer" },
+      { name: "twitter:description", content: "Software Developer y estudiante de Desarrollo de Software en Buenos Aires, Argentina" },
+      { name: "twitter:image", content: "https://lucianodelapena.com/og.jpg" },
     ],
-    links: [
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/__grok/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-        crossOrigin: "anonymous",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap",
-      },
-    ],
+      links: [
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        { rel: "stylesheet", href: appCss },
+        { rel: "manifest", href: "/__grok/manifest.webmanifest" },
+        { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossOrigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap",
+        },
+      ],
   }),
   component: RootDocument,
 });
