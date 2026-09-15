@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/landing",
+      "destination": "https://portfolio-landing-three-psi.vercel.app/"
+    },
+    {
+      "source": "/landing/:path*",
+      "destination": "https://portfolio-landing-three-psi.vercel.app/:path*"
+    }
+  ]
+}
