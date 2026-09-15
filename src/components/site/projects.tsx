@@ -71,7 +71,7 @@ export function Projects() {
                       aria-label={statusLabels[project.status]}
                     >
                       <StatusIcon className="size-3.5" />
-                        
+
                     </span>
                   )}
                 </div>
@@ -116,6 +116,7 @@ export function Projects() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
+                          <Internet className="size-4" size={18} />
                           {t.cta.live}
                         </a>
                       </Button>

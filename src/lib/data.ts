@@ -71,6 +71,22 @@ export const copy = {
     projects: [
 
       {
+        title: "Portfolio & Servicios Web",
+        status: "En línea",
+        kicker: "Página web",
+        desc: "Landing page para ofrecer servicios de diseño y desarrollo web. Incluye plantillas de demostración por rubro y un flujo de contacto directo por WhatsApp y email.",
+        points: [
+          "Plantillas demo por rubro",
+          "Proceso de trabajo claro",
+          "Contacto directo vía WhatsApp y email",
+        ],
+        tags: ["React", "TypeScript", "TailwindCSS"],
+        image: "/projects/landing.png",
+        repo: "",
+        live: "https://portfolio-landing-three-psi.vercel.app/",
+      },
+
+      {
         title: "Evently",
         status: "En línea",
         kicker: "Página web",
@@ -89,7 +105,7 @@ export const copy = {
         title: "Che",
         status: "En desarrollo",
         kicker: "Página web",
-        desc: "Aplicación de organización personal que permite gestionar tareas, recordatorios y prioridades mediante lenguaje natural. CHE interpreta lo que el usuario necesita hacer y se encarga de organizarlo y recordárselo en el momento adecuado.",
+        desc: "Aplicación de organización personal que permite gestionar tareas, recordatorios y prioridades mediante lenguaje natural. Che interpreta lo que el usuario necesita hacer y se encarga de organizarlo y recordárselo en el momento adecuado.",
         points: [
           "Organización de tareas mediante lenguaje natural",
           "Clasificación y priorización automática",
@@ -101,6 +117,7 @@ export const copy = {
         repo: "",
         live: "",
       },
+
     ],
 
     education: [
@@ -109,7 +126,7 @@ export const copy = {
         school: "IFTS N°11",
         dates: "2024 — Actual",
       },
-    
+
     ],
     courses: [
       {
@@ -136,7 +153,7 @@ export const copy = {
         year: "2025",
         href: "/certificados/qa.pdf",
       },
-      
+
     ],
     skillGroups: [
       {
@@ -202,7 +219,21 @@ export const copy = {
     clockLabel: "Local time",
     footerNote: "Made in Buenos Aires",
     projects: [
-
+      {
+        title: "Portfolio & Services Website",
+        status: "Live",
+        kicker: "Website",
+        desc: "Landing page offering web design and development services. Includes demo templates by industry and a direct contact flow via WhatsApp and email.",
+        points: [
+          "Demo templates by industry",
+          "Clear working process",
+          "Direct contact via WhatsApp and email",
+        ],
+        tags: ["React", "TypeScript", "TailwindCSS"],
+        image: "/projects/landing.png",
+        repo: "",
+        live: "https://portfolio-landing-three-psi.vercel.app/",
+      },
       {
         title: "Evently",
         status: "Live",
@@ -222,7 +253,7 @@ export const copy = {
         title: "Che",
         status: "In development",
         kicker: "Website",
-        desc: "A personal organization app that allows you to manage tasks, reminders, and priorities using natural language. CHE interprets what the user needs to do and handles organizing and reminding them at the right time.",
+        desc: "A personal organization app that allows you to manage tasks, reminders, and priorities using natural language. Che interprets what the user needs to do and handles organizing and reminding them at the right time.",
         points: [
           "Task organization using natural language",
           "Automatic classification and prioritization",
@@ -236,7 +267,7 @@ export const copy = {
       },
     ],
     education: [
-     
+
       {
         title: "High school, sports orientation",
         school: "Instituto Comunicaciones",
@@ -268,7 +299,7 @@ export const copy = {
         year: "2025",
         href: "/certificados/qa.pdf",
       },
-    
+
     ],
     skillGroups: [
       {
