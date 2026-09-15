@@ -81,9 +81,9 @@ export const copy = {
           "Contacto directo vía WhatsApp y email",
         ],
         tags: ["React", "TypeScript", "TailwindCSS"],
-        image: "/projects/landing.png",
+        image: "/landing.png",
         repo: "",
-        live: "https://lucianodelapena.com/landing",
+        live: "https://portfolio-landing-three-psi.vercel.app/",
       },
 
       {
@@ -232,7 +232,7 @@ export const copy = {
         tags: ["React", "TypeScript", "TailwindCSS"],
         image: "/projects/landing.png",
         repo: "",
-        live: "https://lucianodelapena.com/landing",
+        live: "https://portfolio-landing-three-psi.vercel.app/",
       },
       {
         title: "Evently",
