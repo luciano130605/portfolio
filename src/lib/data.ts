@@ -230,7 +230,7 @@ export const copy = {
           "Direct contact via WhatsApp and email",
         ],
         tags: ["React", "TypeScript", "TailwindCSS"],
-        image: "/projects/landing.png",
+        image: "/landing.png",
         repo: "",
         live: "https://portfolio-landing-three-psi.vercel.app/",
       },
