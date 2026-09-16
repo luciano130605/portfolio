@@ -136,12 +136,6 @@ export const copy = {
         href: "https://www.credly.com/badges/03ea76cc-4582-409e-a52d-458f830d363a/public_url",
       },
       {
-        title: "Introducción a la Ciencia de Datos",
-        org: "Santander Open Academy",
-        year: "2026",
-        href: "/certificados/data-science.pdf",
-      },
-      {
         title: "Diseño UX",
         org: "Buenos Aires Aprende",
         year: "2025",
@@ -281,12 +275,7 @@ export const copy = {
         year: "2026",
         href: "https://www.credly.com/badges/03ea76cc-4582-409e-a52d-458f830d363a/public_url",
       },
-      {
-        title: "Introduction to Data Science",
-        org: "Santander Open Academy",
-        year: "2026",
-        href: "/certificados/data-science.pdf",
-      },
+     
       {
         title: "UX Design",
         org: "Buenos Aires Aprende",
