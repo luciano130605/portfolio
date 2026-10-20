@@ -102,22 +102,19 @@ export const copy = {
         live: "https://evently-azure-six.vercel.app/",
       },
       {
-        title: "Che",
-        status: "En desarrollo",
+        title: "SF Symbols",
+        status: "En línea",
         kicker: "Página web",
-        desc: "Aplicación de organización personal que permite gestionar tareas, recordatorios y prioridades mediante lenguaje natural. Che interpreta lo que el usuario necesita hacer y se encarga de organizarlo y recordárselo en el momento adecuado.",
+        desc: "Explorador interactivo de íconos SF Symbols de Apple. Permite buscar, visualizar y comparar símbolos.",
         points: [
-          "Organización de tareas mediante lenguaje natural",
-          "Clasificación y priorización automática",
-          "Recordatorios mediante Push y Telegram",
-          "Desarrollado como trabajo de tesis",
+          "Exploración y búsqueda de íconos SF Symbols",
+          "Vista previa de símbolos y sus variantes",
         ],
-        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Express", "Prisma"],
-        image: "/projects/che.png",
-        repo: "",
-        live: "",
+        tags: ["HTML", "CSS", "JavaScript"],
+        image: "/projects/sf-symbols.png",
+        repo: "https://github.com/luciano130605/sf-symbol",
+        live: "https://sf-symbol-theta.vercel.app/",
       },
-
     ],
 
     education: [
@@ -244,20 +241,19 @@ export const copy = {
         live: "https://evently-azure-six.vercel.app/",
       },
       {
-        title: "Che",
-        status: "In development",
+        title: "SF Symbols",
+        status: "Live",
         kicker: "Website",
-        desc: "A personal organization app that allows you to manage tasks, reminders, and priorities using natural language. Che interprets what the user needs to do and handles organizing and reminding them at the right time.",
+        desc: "Interactive explorer of Apple's SF Symbols icons. Allows you to search, view, and compare symbols.",
         points: [
-          "Task organization using natural language",
-          "Automatic classification and prioritization",
-          "Reminders via push notifications and Telegram",
-          "Developed as a thesis project"
+          "Exploring and searching for SF Symbols icons",
+          "Previewing symbols and their variants",
+
         ],
-        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Express", "Prisma"],
-        image: "/projects/che.png",
-        repo: "",
-        live: "",
+        tags: ["HTML", "CSS", "JavaScript"],
+        image: "/projects/sf-symbols.png",
+        repo: "https://github.com/luciano130605/sf-symbol",
+        live: "https://sf-symbol-theta.vercel.app/",
       },
     ],
     education: [
@@ -275,7 +271,7 @@ export const copy = {
         year: "2026",
         href: "https://www.credly.com/badges/03ea76cc-4582-409e-a52d-458f830d363a/public_url",
       },
-     
+
       {
         title: "UX Design",
         org: "Buenos Aires Aprende",
