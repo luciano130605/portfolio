@@ -70,22 +70,7 @@ export const copy = {
     footerNote: "Hecho en Buenos Aires",
     projects: [
 
-      {
-        title: "Portfolio & Servicios Web",
-        status: "En línea",
-        kicker: "Página web",
-        desc: "Landing page para ofrecer servicios de diseño y desarrollo web. Incluye plantillas de demostración por rubro y un flujo de contacto directo por WhatsApp y email.",
-        points: [
-          "Plantillas demo por rubro",
-          "Proceso de trabajo claro",
-          "Contacto directo vía WhatsApp y email",
-        ],
-        tags: ["React", "TypeScript", "TailwindCSS"],
-        image: "/projects/landing.png",
-        repo: "",
-        live: "https://portfolio-landing-three-psi.vercel.app/",
-      },
-
+          
       {
         title: "Evently",
         status: "En línea",
@@ -210,21 +195,7 @@ export const copy = {
     clockLabel: "Local time",
     footerNote: "Made in Buenos Aires",
     projects: [
-      {
-        title: "Portfolio & Services Website",
-        status: "Live",
-        kicker: "Website",
-        desc: "Landing page offering web design and development services. Includes demo templates by industry and a direct contact flow via WhatsApp and email.",
-        points: [
-          "Demo templates by industry",
-          "Clear working process",
-          "Direct contact via WhatsApp and email",
-        ],
-        tags: ["React", "TypeScript", "TailwindCSS"],
-        image: "/projects/landing.png",
-        repo: "",
-        live: "https://portfolio-landing-three-psi.vercel.app/",
-      },
+
       {
         title: "Evently",
         status: "Live",
