@@ -289,7 +289,7 @@ export const copy = {
       {
         title: "Activos",
         status: "Live",
-        kicker: "Web Application",
+        kicker: "Website",
         desc: "Personal investment management and tracking application. Allows users to record transactions, monitor market prices, analyze investment performance, and visualize portfolio growth through charts and statistics.",
         points: [
           "Investment and transaction management",
