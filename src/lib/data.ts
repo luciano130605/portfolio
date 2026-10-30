@@ -70,7 +70,23 @@ export const copy = {
     footerNote: "Hecho en Buenos Aires",
     projects: [
 
-          
+
+      {
+        title: "Calendar",
+        status: "En línea",
+        kicker: "Página web",
+        desc: "Calendario académico para organizar parciales, finales, trabajos prácticos y fechas importantes. Permite visualizar y gestionar las actividades de forma simple, con una interfaz minimalista y adaptable a distintos dispositivos.",
+        points: [
+          "Organización de parciales, finales y trabajos prácticos",
+          "Visualización de fechas en calendario",
+          "Interfaz responsive y minimalista",
+        ],
+        tags: ["HTML", "CSS", "JavaScript"],
+        image: "/projects/calendar.png",
+        repo: "https://github.com/luciano130605/calendar",
+        live: "https://luciano130605.github.io/calendar/",
+      },
+
       {
         title: "Evently",
         status: "En línea",
@@ -99,6 +115,36 @@ export const copy = {
         image: "/projects/sf-symbols.png",
         repo: "https://github.com/luciano130605/sf-symbol",
         live: "https://sf-symbol-theta.vercel.app/",
+      },
+      {
+        title: "Activos",
+        status: "En línea",
+        kicker: "Página web",
+        desc: "Aplicación personal para gestionar y realizar un seguimiento de inversiones. Permite registrar operaciones, consultar cotizaciones, analizar rendimientos y visualizar la evolución del patrimonio mediante gráficos y estadísticas.",
+        points: [
+          "Gestión de inversiones y operaciones",
+          "Seguimiento de cotizaciones y rendimientos",
+          "Gráficos y estadísticas del patrimonio",
+        ],
+        tags: ["React", "TypeScript", "Tailwind"],
+        image: "/projects/activos.png",
+        repo: "https://github.com/luciano130605/activos",
+        live: "https://activos-nu.vercel.app/",
+      },
+      {
+        title: "Che",
+        status: "En desarrollo",
+        kicker: "Proyecto de tesis",
+        desc: "Asistente inteligente para la organización de tareas y actividades mediante lenguaje natural. Permite crear y gestionar tareas por texto o voz, organizar la semana y recibir recordatorios personalizados a través de notificaciones, Telegram y Email.",
+        points: [
+          "Creación de tareas mediante lenguaje natural e IA",
+          "Organización semanal y gestión de actividades",
+          "Recordatorios mediante notificaciones push, Telegram y Email",
+        ],
+        tags: ["Tailwind", "TypeScript", "React", "Node.js"],
+        image: "/projects/che.png",
+        repo: "",
+        live: "",
       },
     ],
 
@@ -197,14 +243,29 @@ export const copy = {
     projects: [
 
       {
+        title: "Calendar",
+        status: "Live",
+        kicker: "Website",
+        desc: "Academic calendar designed to organize exams, assignments, and important dates. Allows users to easily view and manage academic activities through a clean, minimalist interface that adapts to different devices.",
+        points: [
+          "Organization of exams, assignments, and deadlines",
+          "Calendar-based date visualization",
+          "Responsive and minimalist interface",
+        ],
+        tags: ["HTML", "CSS", "JavaScript"],
+        image: "/projects/calendar.png",
+        repo: "https://github.com/luciano130605/calendar",
+        live: "https://luciano130605.github.io/calendar/",
+      },
+      {
         title: "Evently",
         status: "Live",
         kicker: "Website",
-        desc: "A platform for creating and managing digital invitations, QR-code tickets, and designs. It allows organizers to set up an event, share it, and manage access from a single place.",
+        desc: "Platform for creating and managing digital invitations, QR code tickets, and custom designs. Built to help event organizers create, share, and manage their events and access control from a single place.",
         points: [
-          "Digital invitations with custom design",
-          "QR-code tickets",
-          "Event management in a single dashboard",
+          "Custom-designed digital invitations",
+          "QR code ticket generation",
+          "Centralized event management dashboard",
         ],
         tags: ["React", "JavaScript", "Supabase"],
         image: "/projects/evently.png",
@@ -215,16 +276,45 @@ export const copy = {
         title: "SF Symbols",
         status: "Live",
         kicker: "Website",
-        desc: "Interactive explorer of Apple's SF Symbols icons. Allows you to search, view, and compare symbols.",
+        desc: "Interactive explorer for Apple's SF Symbols icon library. Allows users to search, preview, and compare symbols and their variations.",
         points: [
-          "Exploring and searching for SF Symbols icons",
-          "Previewing symbols and their variants",
-
+          "SF Symbols browsing and search",
+          "Symbol previews and variant comparison",
         ],
         tags: ["HTML", "CSS", "JavaScript"],
         image: "/projects/sf-symbols.png",
         repo: "https://github.com/luciano130605/sf-symbol",
         live: "https://sf-symbol-theta.vercel.app/",
+      },
+      {
+        title: "Activos",
+        status: "Live",
+        kicker: "Web Application",
+        desc: "Personal investment management and tracking application. Allows users to record transactions, monitor market prices, analyze investment performance, and visualize portfolio growth through charts and statistics.",
+        points: [
+          "Investment and transaction management",
+          "Market price and performance tracking",
+          "Portfolio analytics and visualizations",
+        ],
+        tags: ["React", "TypeScript", "Tailwind"],
+        image: "/projects/activos.png",
+        repo: "https://github.com/luciano130605/activos",
+        live: "https://activos-nu.vercel.app/",
+      },
+      {
+        title: "Che",
+        status: "In Development",
+        kicker: "Thesis Project",
+        desc: "AI-powered assistant for organizing tasks and activities using natural language. Enables users to create and manage tasks through text or voice, plan their week, and receive personalized reminders via push notifications, Telegram, and email.",
+        points: [
+          "AI-powered task creation using natural language",
+          "Weekly planning and task management",
+          "Reminders via push notifications, Telegram, and email",
+        ],
+        tags: ["Tailwind", "TypeScript", "React", "Node.js"],
+        image: "/projects/che.png",
+        repo: "",
+        live: "",
       },
     ],
     education: [
