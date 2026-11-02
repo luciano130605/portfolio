@@ -1,39 +1,25 @@
+import type { CSSProperties } from "react";
 import { useSite } from "./site-provider";
+
+const accents = ["var(--blue)", "var(--orange)", "var(--yellow)", "var(--purple)", "var(--green)"];
 
 export function Skills() {
   const { t } = useSite();
-
   return (
-    <section
-      id="habilidades"
-      className="border-t border-line py-16 sm:py-20 lg:py-28"
-    >
-      <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-subtle sm:text-xs">
-        05 — {t.sections.habilidades}
-      </p>
+    <section id="habilidades" className="border-t border-line py-16 sm:py-24">
+      <p className="eyebrow">05 — {t.sections.habilidades}</p>
+      <h2 className="h2 mt-3">{t.sections.habilidades}</h2>
 
-      <h2 className="mt-3 font-display text-3xl italic tracking-tight text-fg sm:text-4xl lg:text-5xl">
-        {t.sections.habilidades}
-      </h2>
-
-      <div className="mt-8 grid gap-8 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-        {t.skillGroups.map((group) => (
-          <div
-            key={group.label}
-            className="min-w-0 border-t border-line pt-5"
-          >
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-subtle sm:text-xs">
+      <div className="mt-10 grid gap-3 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
+        {t.skillGroups.map((group, i) => (
+          <div key={group.label} style={{ "--c": accents[i % accents.length] } as CSSProperties} className="card min-w-0 p-5">
+            <p className="flex items-center gap-3 font-mono text-[12.5px] text-muted">
+              <i className="dot" />
               {group.label}
             </p>
-
-            <ul className="mt-4 flex flex-wrap gap-2">
+            <ul className="mt-5 flex flex-wrap gap-2">
               {group.items.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-full px-3 py-1.5 text-xs text-fg shadow-[var(--shadow-border)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-border)] sm:px-3.5 sm:text-sm"
-                >
-                  {item}
-                </li>
+                <li key={item} className="tag text-fg transition-colors hover:border-muted">{item}</li>
               ))}
             </ul>
           </div>

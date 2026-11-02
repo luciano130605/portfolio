@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import { cn } from "@/lib/utils";
-
 import { Contact } from "./contact";
 import { Courses } from "./courses";
 import { Education } from "./education";
@@ -15,62 +13,45 @@ import { useActiveSection } from "./use-active-section";
 
 export function Portfolio() {
   const { t } = useSite();
-
   const activeId = useActiveSection();
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [railCollapsed, setRailCollapsed] = useState(false);
 
   return (
-    <div className="relative min-h-dvh overflow-x-clip bg-bg text-fg">
-      <div className="grain" aria-hidden="true" />
-
+    <div className="relative min-h-dvh overflow-x-clip text-fg">
       <a
         href="#intro"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-fg"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-[10px] focus:bg-fg focus:px-4 focus:py-2 focus:text-bg"
       >
         {t.cta.skip}
       </a>
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-20 hidden border-r border-line",
+          "fixed inset-y-0 left-0 z-20 hidden border-r border-line bg-side lg:block",
           "transition-[width] duration-300 ease-[var(--ease-out)]",
-          "lg:flex",
-          railCollapsed ? "w-[72px]" : "w-56",
+          railCollapsed ? "w-[78px]" : "w-[250px]",
         )}
       >
-        <div
-          className={cn(
-            "relative h-full w-full py-8",
-            "transition-[padding] duration-300 ease-[var(--ease-out)]",
-            railCollapsed ? "px-3" : "px-6",
-          )}
-        >
+        <div className="h-full px-3.5 py-6">
           <Rail
             activeId={activeId}
             collapsed={railCollapsed}
-            onToggle={() => setRailCollapsed((prev) => !prev)}
+            onToggle={() => setRailCollapsed((p) => !p)}
           />
         </div>
       </aside>
 
-      <MobileBar
-        open={menuOpen}
-        setOpen={setMenuOpen}
-        activeId={activeId}
-      />
+      <MobileBar open={menuOpen} setOpen={setMenuOpen} activeId={activeId} />
 
       <main
         className={cn(
-          "px-5 pt-20 pb-10",
-          "transition-[margin] duration-300 ease-[var(--ease-out)]",
-          "sm:px-8",
-          "lg:px-16 lg:pt-0 lg:pb-16",
-          railCollapsed ? "lg:ml-[72px]" : "lg:ml-56",
+          "px-5 pt-20 pb-10 transition-[margin] duration-300 ease-[var(--ease-out)] sm:px-8",
+          "lg:px-14 lg:pt-0 lg:pb-16",
+          railCollapsed ? "lg:ml-[78px]" : "lg:ml-[250px]",
         )}
       >
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-[1040px]">
           <Hero />
           <Projects />
           <Education />

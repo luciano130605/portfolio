@@ -1,3 +1,4 @@
+import type { PointerEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { profile } from "@/lib/data";
 import { CopyEmail } from "./copy-email";
@@ -6,94 +7,56 @@ import { GH, Linkedin, Sms } from "../icons/icons";
 
 export function Hero() {
   const { t } = useSite();
+  const onMove = (e: PointerEvent<HTMLElement>) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+    e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
+  };
 
   return (
-    <section
-      id="intro"
-      className="flex w-full flex-col overflow-hidden pt-8 pb-16 sm:pb-20 lg:pt-24 lg:pb-28"
-    >
-      <div className="reveal">
-        <div className="mb-7 flex flex-wrap items-center gap-3 sm:mb-8">
-          <span className="text-sm text-subtle sm:text-base">
-            {t.locationLine}
-          </span>
-        </div>
-      </div>
+    <section id="intro" onPointerMove={onMove} className="spot flex flex-col pt-10 pb-16 sm:pb-20 lg:pt-28 lg:pb-28">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-10 right-0 h-[420px] w-[560px] max-w-full opacity-70 [background:radial-gradient(60%_60%_at_70%_30%,var(--g2),transparent_70%),radial-gradient(50%_50%_at_30%_70%,var(--g1),transparent_70%)] blur-2xl"
+      />
 
-      <h1 className="reveal reveal-d1 font-['Sora'] text-[clamp(3rem,16vw,8.5rem)] leading-[0.88] tracking-[-0.045em] text-fg">
+      <p className="reveal relative flex items-center gap-3 font-mono text-[12.5px] text-muted">
+        <i className="dot" style={{ "--c": "var(--green)" } as React.CSSProperties} />
+        {t.locationLine}
+      </p>
+
+      <h1 className="reveal reveal-d1 relative mt-7 text-[clamp(3.4rem,13vw,9rem)] font-light leading-[0.9] tracking-[-0.05em]">
         <span className="block">{profile.shortName}</span>
-        <span className="block">{profile.lastName}</span>
+        <span className="block text-muted">{profile.lastName}</span>
       </h1>
 
-      <p className="reveal reveal-d2 mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-xl">
+      <p className="reveal reveal-d2 relative mt-8 w-fit rounded-full border border-line2 bg-surface px-3.5 py-1.5 font-mono text-[12.5px] text-muted">
         {t.role}
       </p>
 
-      <p className="reveal reveal-d3 mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:mt-6 sm:text-lg">
-        <span className="text-fg">{t.introLead}</span>{" "}
-        {t.intro}
+      <p className="reveal reveal-d3 relative mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+        <span className="text-fg">{t.introLead}</span> {t.intro}
       </p>
 
-      <div className="reveal reveal-d4 mt-8 flex flex-wrap items-center gap-2.5 sm:mt-10 sm:gap-3">
-        <Button
-          asChild
-          className="min-h-10 pl-4 pr-4 sm:pl-5 sm:pr-4"
-        >
+      <div className="reveal reveal-d4 relative mt-9 flex flex-wrap items-center gap-2.5">
+        <Button asChild>
           <a href={`mailto:${profile.email}`}>
             <Sms className="size-4" />
             {t.cta.write}
           </a>
         </Button>
-
-        <div className="relative z-20 touch-manipulation">
-          <CopyEmail />
-        </div>
-
-        <div className="flex basis-full items-center gap-2 sm:basis-auto sm:gap-3">
-          <Button
-            asChild
-            variant="ghost"
-            className="group relative h-10 w-10 justify-start overflow-hidden p-0 text-fg transition-all duration-300 hover:w-[120px]"
-          >
-            <a
-              href={profile.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.cta.github}
-            >
-              <span className="flex size-10 shrink-0 items-center justify-center">
-                <GH className="size-5" />
-              </span>
-
-              <span className="hidden whitespace-nowrap pr-3 text-sm opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 sm:block -translate-x-2">
-                GitHub
-              </span>
-            </a>
-          </Button>
-
-          <Button
-            asChild
-            variant="ghost"
-            className="group relative h-10 w-10 justify-start overflow-hidden p-0 text-fg transition-all duration-300 hover:w-[120px]"
-          >
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t.cta.linkedin}
-            >
-              <span className="flex size-10 shrink-0 items-center justify-center">
-                <Linkedin className="size-5" />
-              </span>
-
-              <span className="hidden whitespace-nowrap pr-3 text-sm opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 sm:block -translate-x-2">
-                LinkedIn
-              </span>
-            </a>
-          </Button>
-        </div>
+        <CopyEmail />
+        <Button asChild variant="outline" size="icon">
+          <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label={t.cta.github}>
+            <GH className="size-[18px]" />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label={t.cta.linkedin}>
+            <Linkedin className="size-[18px]" />
+          </a>
+        </Button>
       </div>
-
     </section>
   );
 }

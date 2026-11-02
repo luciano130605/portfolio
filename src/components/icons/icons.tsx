@@ -70,7 +70,23 @@ export function Sms({ className = "", size = 24, color = "currentColor", }: Icon
     );
 }
 
+export function X({ className = "", size = 24, color = "currentColor", }: Icons) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} className={className} viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+        </svg>
+    );
+}
 
+export function Menu({ className = "", size = 24, color = "currentColor", }: Icons) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} className={className} viewBox="0 0 24 24" fill="none">
+            <path d="M10 5L20 5" stroke={color}></path>
+            <path d="M4 12L20 12" stroke={color}></path>
+            <path d="M4 19L14 19" stroke={color}></path>
+        </svg>
+    );
+}
 
 
 export function LightIcon({ className = "", size = 24, color = "currentColor", }: Icons) {

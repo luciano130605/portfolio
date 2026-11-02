@@ -18,7 +18,7 @@ export const Route = createRootRoute({
         content: "Software Developer y estudiante de Desarrollo de Software en Buenos Aires, Argentina",
       },
       { name: "author", content: APP_NAME },
-      { name: "theme-color", content: "#0c0c0b" },
+      { name: "theme-color", content: "#0a0a0a" },
       { name: "robots", content: "index, follow" },
 
       { property: "og:type", content: "website" },
@@ -46,7 +46,7 @@ export const Route = createRootRoute({
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap",
         },
       ],
   }),

@@ -8,18 +8,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-fg hover:opacity-90",
+        default: "bg-[image:var(--pbg)] text-[var(--on-accent)] shadow-[inset_0_1px_0_rgba(255,255,255,.4),0_1px_8px_rgba(0,0,0,.3)] hover:opacity-90",
         outline:
-          "bg-transparent text-fg shadow-[var(--shadow-border)] hover:shadow-[var(--shadow-border-hover)]",
-        ghost: "bg-transparent text-muted hover:bg-fg/5 hover:text-fg",
+          "border border-line2 bg-elevated text-fg hover:border-muted",
+        ghost: "bg-transparent text-muted hover:bg-elevated hover:text-fg",
         link: "bg-transparent text-fg underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-11 rounded-full px-5 text-sm",
-        sm: "h-9 rounded-full px-3.5 text-sm",
-        lg: "h-12 rounded-full px-6 text-base",
-        icon: "size-11 rounded-full",
-        "icon-sm": "size-9 rounded-full",
+        default: "h-10 rounded-[10px] px-4 text-sm",
+        sm: "h-9 rounded-[10px] px-3.5 text-sm",
+        lg: "h-12 rounded-[10px] px-6 text-base",
+        icon: "size-10 rounded-[10px]",
+        "icon-sm": "size-9 rounded-[10px]",
       },
     },
     defaultVariants: {
