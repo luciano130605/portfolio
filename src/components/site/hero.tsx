@@ -21,7 +21,6 @@ export function Hero() {
       />
 
       <p className="reveal relative flex items-center gap-3 font-mono text-[12.5px] text-muted">
-        <i className="dot" style={{ "--c": "var(--green)" } as React.CSSProperties} />
         {t.locationLine}
       </p>
 
