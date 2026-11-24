@@ -176,8 +176,8 @@ export const copy = {
         ],
         tags: ["Tailwind", "TypeScript", "React", "Node.js"],
         image: "/projects/che.png",
-        repo: "",
-        live: "",
+        repo: "https://github.com/luciano130605/frontend-che",
+        live: "https://frontend-che.vercel.app/",
       },
     ],
 
@@ -379,8 +379,8 @@ export const copy = {
         ],
         tags: ["Tailwind", "TypeScript", "React", "Node.js"],
         image: "/projects/che.png",
-        repo: "",
-        live: "",
+        repo: "https://github.com/luciano130605/frontend-che",
+        live: "https://frontend-che.vercel.app/",
       },
     ],
     education: [
